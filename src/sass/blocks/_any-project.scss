@@ -1,0 +1,133 @@
+.any-project {
+   background-color: $black;
+   padding-top: 120px;
+   padding-bottom: 120px;
+   border-radius: 32px;
+   position: relative;
+   z-index: 8;
+   &._active {
+      .pop-up-second {
+         opacity: 1;
+         z-index: 1000;
+         &.active {
+            display: none;
+         }
+      }
+   }
+   &-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 52px;
+   }
+   &__descr {
+      font-family: 'UbuntuRegular';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: $white;
+      width: 346px;
+      margin-top: 24px;
+   }
+   &__wrapper {
+      gap: 12px;
+      display: flex;
+      flex-direction: column;
+   }
+   &__items {
+      padding: 36px 40px;
+      border: 1px solid $white;
+      border-radius: 16px;
+      position: relative;
+      cursor: pointer;
+      a {
+         text-decoration: none;
+      }
+      &:hover {
+         .any-project__arrow {
+            svg path {
+               stroke: #2264FD;
+            }
+         }
+         .any-project__works {
+            display: block;
+         }
+      }
+   }
+   &__title {
+      font-family: 'DrukCyrMedium';
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 40px;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+      color: $white;
+   }
+   &__subtitle {
+      margin-top: 16px;
+      font-family: 'UbuntuRegular';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: $white;
+   }
+   &__arrow {
+      position: absolute;
+      top: 45px;
+      right: 47px;
+   }
+   &__images {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+   }
+   &__img1 {
+      position: absolute;
+      bottom: -135px;
+      left: 0px;
+      z-index: 2;
+   }
+   &__img2 {
+      position: absolute;
+      bottom: 45px;
+      left: 0px;
+      z-index: 3;
+      mix-blend-mode: difference;
+   }
+   .stages__images {
+      display: none;
+   }
+   &__link {
+      display: block;
+      margin-top: 16px;
+      display: flex;
+      &:hover {
+         svg path {
+            stroke: #2264FD;
+         }
+      }
+      span {
+         margin-right: 23px;
+      }
+   }
+   &__data {
+      font-family: 'UbuntuRegular';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 23px;
+      color: $white;
+      display: inline-block;
+      &:hover {
+         color: $blue;
+         svg path {
+            stroke: #2264FD;
+         }
+      }
+      span {
+         margin-right: 23px;
+         display: inline-block;
+      }
+   }
+   &__works {
+      display: none;
+   }
+}

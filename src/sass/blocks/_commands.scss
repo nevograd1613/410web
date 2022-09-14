@@ -1,0 +1,122 @@
+.commands {
+   padding: 120px 0 749px;
+   background-color: $black;
+   border-radius: 32px;
+   position: relative;
+   &._active {
+      .pop-up-first {
+         opacity: 1;
+         z-index: 1000;
+         &.active {
+            display: none;
+         }
+      }
+   }
+   &__btns {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      width: 90%;
+      gap: 13px;
+   }
+   &__btn-left {
+      transform: rotate(180deg);
+      cursor: pointer;
+      &:hover {
+         svg path {
+            stroke: #2264FD;
+         }
+      }
+   }
+   &__btn-right {
+      cursor: pointer;
+      &:hover {
+         svg path {
+            stroke: #2264FD;
+         }
+      }
+   }
+   &__images {
+      position: absolute;
+      top: 0;
+      left: 0;
+   }
+   &__img1 {
+      position: absolute;
+      top: -156px;
+      left: 585px;
+   }
+   &__img2 {
+      mix-blend-mode: difference;
+      position: absolute;
+      top: -156px;
+      left: 505px;
+      z-index: 5;
+   }
+}
+
+
+.slider {
+   position: absolute;
+   overflow: hidden;
+   width: 94%;
+   height: 650px;
+   background-color: $black;
+}
+
+.slider-inner {
+   position: absolute;
+   top: 62px;
+   left: 0;
+   height: 100%;
+   width: 200%;
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   pointer-events: none;
+   gap: 12px;
+   background-color: $black;
+}
+
+.slider-img {
+   height: 100%;
+   text-align: center;
+   img {
+      width: 346px;
+      height: 453px;
+      object-fit: contain;
+   }
+}
+
+.slider-black {
+   background-color: $black;
+   border: 1px solid #FFFFFF;
+   border-radius: 16px;
+}
+
+.image__signature {
+   margin-top: 24px;
+   margin-bottom: 4px;
+   text-align: left;
+}
+
+.image__signature-title {
+   
+   font-family: 'DrukCyrMedium';
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 40px;
+   letter-spacing: -2px;
+   text-transform: uppercase;
+   color: $white;
+   text-align: left;
+}
+
+.image__signature-subtitle {
+   font-family: 'UbuntuRegular';
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 140%;
+   color: $white;
+   opacity: 0.4;
+   text-align: left;
+}

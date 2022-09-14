@@ -1,0 +1,98 @@
+.request {
+   margin-top: 120px;
+   background-color: #fff;
+   z-index: 50;
+   padding-bottom: 120px;
+   &__wrapper {
+      background-color: $grey;
+      border-radius: 16px;
+      padding: 44px 65px;
+   }
+   &__item {
+      display: flex;
+      justify-content: space-between;
+   }
+   &__title {
+      font-family: 'DrukCyrMedium';
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 40px;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+      color: $black;
+      z-index: 50;
+   }
+   &__descr {
+      font-family: 'UbuntuRegular';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: $black;
+      opacity: 0.4;
+      z-index: 50;
+   }
+   &__images {
+      margin: 0 auto;
+      position: relative;
+   }
+   &__img1 {
+      position: absolute;
+      top: -44px;
+      transform: translateX(-50%);
+      z-index: 2;
+   }
+   &__img2 {
+      position: absolute;
+      top: -44px;
+      transform: translateX(-50%);
+      z-index: 3;
+      mix-blend-mode: difference;
+   }
+   &__img3 {
+      display: none;
+   }
+   &__img4 {
+      display: none;
+   }
+   &__form {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 54px;
+      input::placeholder {
+         color: $black;
+      }
+      input {
+         padding: 21px 0;
+         border: none;
+         width: 350px;
+         font-family: 'UbuntuRegular';
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 18px;
+         opacity: 0.5;
+         border-bottom: 1px solid $black;
+      }
+   }
+   &__btn {
+      background: $blue;
+      border-radius: 16px;
+      border: none;
+      padding: 22px 92px;
+      font-family: 'DrukCyrMedium';
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0.02em;
+      color: $white;
+   }
+   &__policy {
+      margin-top: 16px;
+      font-family: 'UbuntuLight';
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 130%;
+      color: $black;
+      opacity: 0.4;
+   }
+}

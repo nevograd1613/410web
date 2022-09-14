@@ -1,0 +1,90 @@
+.stages {
+   background-color: $black;
+   padding-top: 120px;
+   padding-bottom: 120px;
+   border-radius: 32px;
+   position: relative;
+   &__images {
+      position: absolute;
+      top: 0;
+      right: 0;
+   }
+   &__img1 {
+      position: absolute;
+      top: -90px;
+      right: 0px;
+      z-index: 2;
+   }
+   &__img2 {
+      position: absolute;
+      top: -82px;
+      right: 0px;
+      z-index: 3;
+      mix-blend-mode: difference;
+   }
+   &-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, auto);
+      gap: 12px;
+   }
+   &__number {
+      font-family: 'DrukCyrBold';
+      font-weight: 700;
+      font-size: 65px;
+      line-height: 81px;
+      letter-spacing: -2px;
+      text-transform: uppercase;
+      color: $blue;
+   }
+   &__descr {
+      font-family: 'DrukCyrMedium';
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 40px;
+      letter-spacing: -2px;
+      text-transform: uppercase;
+      color: $white;
+   }
+   &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid $white;
+      border-radius: 16px;
+      padding: 32px 40px 48px;
+      &:hover {
+         background-color: $blue;
+         .stages__number {
+            color: $white;
+         }
+      }
+      &-first {
+         height: 295px;
+      }
+      &-second {
+         height: 351px;
+      }
+      &-third {
+         height: 378px;
+         position: relative;
+         top: -56px;
+      }
+      &-fourth {
+         height: 366px;
+      }
+      &-fifth {
+         height: 376px;
+         position: relative;
+         top: -56px;
+      }
+      &-sixth {
+         height: 332px;
+         position: relative;
+         top: -12px;
+         &:hover {
+            cursor: pointer;
+         }
+      }
+   }
+}

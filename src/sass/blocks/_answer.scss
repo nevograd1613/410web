@@ -1,0 +1,60 @@
+.answers {
+   background-color: $black;
+   padding: 120px 0;
+   border-radius: 32px;
+   &__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+   &__arrow {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      background: $blue;
+      border-radius: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      right: 0;
+      display: none;
+   }
+   &__items {
+      cursor: pointer;
+      transition: all 1.5s;
+      position: relative;
+      hr {
+         margin-bottom: 40px;
+      }
+      &:hover {
+         .answers__answer {
+            display: block;
+         }
+      }
+   }
+   &__data {
+      font-family: 'DrukCyrMedium';
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 40px;
+      letter-spacing: -2px;
+      text-transform: uppercase;
+      color: $white;
+      margin-bottom: 32px;
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+   &__answer {
+      font-family: 'UbuntuRegular';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 140%;
+      color: $white;
+      width: 900px;
+      margin-bottom: 40px;
+      display: none;
+      transition: all 1.5s;
+   }
+}

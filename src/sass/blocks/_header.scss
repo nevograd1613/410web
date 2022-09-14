@@ -1,0 +1,154 @@
+.header {
+   background-color: $black;
+   position: relative;
+   &__menu {
+      padding: 36px 40px;
+      display: flex;
+      justify-content: space-between;
+      &__items {
+         display: flex;
+         justify-content: space-around;
+         gap: 89px;
+      }
+      a {
+         font-family: 'UbuntuRegular';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 140%;
+         color: $white;
+         text-decoration: none;
+         &:hover {
+            color: $blue;
+         }
+      }
+   }
+   &__requests {
+      a {
+         font-size: 14px;
+         line-height: 16px;
+         span {
+            margin-left: 9px;
+         }
+         &:hover {
+            svg path {
+               stroke: #2264FD;
+            }
+         }
+      }
+   }
+   &__hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      cursor: pointer;
+      &.active {
+         display: none;
+      }
+      &:hover span{
+         background: $blue;
+      }
+      span {
+         display: block;
+         width: 20px;
+         height: 2px;
+         background: $white;
+         border-radius: 1px;
+      }
+      span.long {
+         margin-bottom: 8px;
+         width: 32px;
+      }
+   }
+   &__line {
+      border: 1px solid #FFFFFF;
+      opacity: 0.3;
+      width: 100%;
+   }
+}
+
+nav {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   column-gap: 80px;
+}
+.menu {
+   position: absolute;
+   top: 107px;
+   left: 0;
+   height: 100vh;
+   width: 100%;
+   background-color: $black;
+   padding-left: 100px;
+   padding-top: 105px;
+   z-index: 1000;
+   display: none;
+   &__close {
+      display: none;
+      cursor: pointer;
+      &:hover {
+         svg path {
+            fill: #2264FD;
+         }
+      }
+      &.active {
+         display: block;
+      }
+   }
+   &.active {
+      display: block;
+   }
+   &__block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__aside {
+      display: flex;
+      flex-direction: column;
+      margin-right: 52px;
+      gap: 53px;
+   }
+   &__list {
+      list-style-type: none;
+   }
+   &__title {
+      margin-bottom: 44px;
+      font-family: 'DrukCyrBold';
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 44px;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+      color: $white;
+      span {
+         color: $blue;
+      }
+   }
+   &__link {
+      font-family: 'UbuntuRegular';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 140%;
+      margin-bottom: 18px;
+      &:last-child {
+         margin-bottom: 0;
+      }
+      span {
+         margin-left: 19px;
+      }
+      a {
+         text-decoration: none;
+         color: $white;
+         opacity: 0.4;
+         &:hover {
+            opacity: 1;
+            svg path {
+               stroke: #2264FD;
+            }
+         }
+      }
+   }
+}

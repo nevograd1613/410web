@@ -1,0 +1,57 @@
+.work {
+   margin-top: 120px;
+   margin-bottom: 120px;
+   &__container {
+      display: grid;
+      grid-template-columns: 740px 402px;
+      justify-content: space-between;
+      margin: 40px 0;
+      .col-2 {
+         margin-top: 8px;
+      }
+      a {
+         text-decoration: none;
+      }
+   }
+   &__link {
+      display: block;
+      margin-bottom: 25px;
+      display: flex;
+      &:last-child {
+         margin-bottom: 0;
+      }
+      span {
+         margin-right: 13px;
+      }
+   }
+   &__descr {
+      font-family: 'UbuntuRegular';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: $dark;
+      width: 505px;
+      margin-top: 32px;
+      &-min {
+         width: 416px;
+      }
+   }
+   &__data {
+      font-family: 'UbuntuRegular';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 140%;
+      color: $dark;
+      display: inline-block;
+      span {
+         margin-right: 13px;
+         display: inline-block;
+      }
+      &:hover {
+         color: $blue;
+         svg path {
+            stroke: #2264FD;
+         }
+      }
+   }
+}

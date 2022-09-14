@@ -1,0 +1,66 @@
+.initial {
+   background-color: $black;
+   border-radius: 0px 0px 32px 32px;
+   padding-top: 146px;
+   padding-bottom: 186px;
+   position: relative;
+   &__title {
+      font-family: 'DrukCyrBold';
+      font-weight: 700;
+      font-size: 90px;
+      line-height: 100px;
+      text-transform: uppercase;
+      letter-spacing: -2px;
+      color: $white;
+      margin-bottom: 60px;
+      z-index: 5;
+   }
+   &__signature {
+      font-family: 'UbuntuRegular';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: $white;
+      margin-bottom: 86px;
+   }
+   &__btn {
+      font-family: 'UbuntuRegular';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: $white;
+      border: 1px solid $white;
+      border-radius: 8px;
+      background-color: $black;
+      padding: 20px 30px;
+      span {
+         margin-left: 13px;
+      }
+      &:hover {
+         border: 1px solid $blue;
+         color: $blue;
+         svg path {
+            stroke: #2264FD;
+         }
+      }
+   }
+   &__images {
+      position: absolute;
+      top: 0;
+      right: 0;
+   }
+   &__img1 {
+      position: absolute;
+      top: 68px;
+      right: 33px;
+      z-index: 2;
+      mix-blend-mode: difference;
+   }
+   &__img2 {
+      position: absolute;
+      top: 142px;
+      right: 69px;
+      z-index: 1;
+      mix-blend-mode: difference;
+   }
+}

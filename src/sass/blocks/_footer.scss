@@ -1,0 +1,76 @@
+.footer {
+   background-color: $white;
+   position: relative;
+   z-index: 100;
+   padding-top: 80px;
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 61px;
+   }
+   &__descr {
+      font-family: 'UbuntuRegular';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: rgba(0, 0, 0, 0.4);
+   }
+   &__item {
+      a {
+         text-decoration: none;
+         font-family: 'UbuntuRegular';
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 140%;
+         color: $dark;
+         &:hover {
+            color: $blue;
+         }
+      }
+   }
+   &__btn {
+      font-family: 'UbuntuRegular';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      color: $dark;
+      padding: 20px 30px;
+      background-color: #fff;
+      border: 1px solid $dark;
+      span {
+         margin-left: 13px;
+      }
+      &:hover {
+         border: 1px solid $blue;
+         color: $blue;
+         svg path {
+            stroke: #2264FD;
+         }
+      }
+   }
+   &__data {
+      font-family: 'UbuntuRegular';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: $dark;
+      margin-bottom: 64px;
+   }
+   .logo {
+      grid-area: logo;
+   }
+   .num {
+      grid-area: num;
+   }
+   .adr {
+      grid-area: adr;
+   }
+   .btn {
+      grid-area: btn;
+   }
+   .data {
+      display: none;
+      grid-area: data;
+   }
+}
